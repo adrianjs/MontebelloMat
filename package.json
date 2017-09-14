@@ -1,0 +1,22 @@
+{
+  "name": "it2810-webutvikling-h17-prosjekt-2-gruppe-21",
+  "version": "1.0.0",
+  "description": "Hei, dette er Baldur",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IT2810/it2810-webutvikling-h17-prosjekt-2-gruppe-21.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IT2810/it2810-webutvikling-h17-prosjekt-2-gruppe-21/issues"
+  },
+  "homepage": "https://github.com/IT2810/it2810-webutvikling-h17-prosjekt-2-gruppe-21#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
