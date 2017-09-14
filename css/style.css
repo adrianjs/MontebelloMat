@@ -6,7 +6,11 @@ h1 {
 	color: #303030;
 	text-align: center;
     font-family: "Ostrich Main", Verdana, Tahoma;
-    font-size: 200px;
+    font-size: 100px;
+}
+
+#flex-nav {
+    text-align: center;
 }
 
 @font-face{
