@@ -2,18 +2,38 @@ body {
     background-color: #ffffe3;
 }
 
+/**TEXT**/
 h1 {
 	color: #303030;
 	text-align: center;
-    font-family: "Ostrich Main", Verdana, Tahoma;
+    font-family: "Destain", Verdana, Tahoma;
     font-size: 100px;
+}
+h2 {
+	color: #303030;
+    font-family: "Yours", Verdana, Tahoma;
+    font-size: 50px;
+}
+a, p {
+    color: #303030;
+    font-family: "Inline", Verdana, Tahoma;
+    font-size: 15px;
+}
+
+/**FONTS**/
+@font-face{
+    font-family: "Destain";
+    src: url('../font/Destain.otf');
+}
+@font-face{
+    font-family: "Yours";
+    src: url('../font/Affectionately-Yours.otf');
+}
+@font-face{
+    font-family: "Inline";
+    src: url('../font/ostrich-sans-master/OstrichSansInline.otf');
 }
 
 #flex-nav {
     text-align: center;
-}
-
-@font-face{
-    font-family: "Ostrich Main";
-    src: url('../font/ostrich-sans-master/OstrichSans-Bold.otf');
 }
