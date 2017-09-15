@@ -2,6 +2,7 @@ body {
     background-color: #ffffe3;
 }
 
+<<<<<<< HEAD
 a {
 	text-decoration: none;
 }
@@ -11,12 +12,15 @@ div, p, figure {
 	padding: 0;
 }
 
+=======
+>>>>>>> 6aad0618e982ac18163ae5e9919d4916d260d658
 h1 {
 	color: #303030;
 	text-align: center;
     font-family: "Ostrich Main", Verdana, Tahoma;
     font-size: 100px;
 }
+<<<<<<< HEAD
 
 #flex-container{
     display: flex;
@@ -26,9 +30,33 @@ h1 {
 
 #flex-nav {
     text-align: center;
+=======
+h2 {
+	color: #303030;
+    font-family: "Yours", Verdana, Tahoma;
+    font-size: 50px;
+}
+a, p, h3{
+    color: #303030;
+    font-family: "Inline", Verdana, Tahoma;
+    font-size: 15px;
+>>>>>>> 6aad0618e982ac18163ae5e9919d4916d260d658
 }
 
+/**FONTS**/
 @font-face{
-    font-family: "Ostrich Main";
-    src: url('../font/ostrich-sans-master/OstrichSans-Bold.otf');
+    font-family: "Destain";
+    src: url('../font/Destain.otf');
+}
+@font-face{
+    font-family: "Yours";
+    src: url('../font/Affectionately-Yours.otf');
+}
+@font-face{
+    font-family: "Inline";
+    src: url('../font/ostrich-sans-master/OstrichSansInline.otf');
+}
+
+#flex-nav {
+    text-align: center;
 }
