@@ -11,12 +11,6 @@ div, p, figure {
     padding: 0;
 }
 
-#flex-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
 /**TEXT**/
 h1 {
     color: #303030;
