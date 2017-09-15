@@ -2,7 +2,6 @@ body {
     background-color: #ffffe3;
 }
 
-<<<<<<< HEAD
 a {
 	text-decoration: none;
 }
@@ -12,25 +11,19 @@ div, p, figure {
 	padding: 0;
 }
 
-=======
->>>>>>> 6aad0618e982ac18163ae5e9919d4916d260d658
-h1 {
-	color: #303030;
-	text-align: center;
-    font-family: "Ostrich Main", Verdana, Tahoma;
-    font-size: 100px;
-}
-<<<<<<< HEAD
-
 #flex-container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
-#flex-nav {
-    text-align: center;
-=======
+/**TEXT**/
+h1 {
+	color: #303030;
+	text-align: center;
+    font-family: "Ostrich Main", Verdana, Tahoma;
+    font-size: 100px;
+}
 h2 {
 	color: #303030;
     font-family: "Yours", Verdana, Tahoma;
@@ -40,7 +33,6 @@ a, p, h3{
     color: #303030;
     font-family: "Inline", Verdana, Tahoma;
     font-size: 15px;
->>>>>>> 6aad0618e982ac18163ae5e9919d4916d260d658
 }
 
 /**FONTS**/
