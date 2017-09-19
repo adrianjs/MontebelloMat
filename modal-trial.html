@@ -5,11 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Modal attempt</title>
+
+    <link rel="stylesheet" type="text/css" href="modal-trial.css">
 </head>
 <body>
     <label class="btn" for="modal-one">Example</label>
 
     <!-- Modal One -->
-    
+    <div class="modal">
+        <input class="modal-open" id="modal-one" type="checkbox" hidden>
+        <div class="modal-wrap" aria-hidden="true" role="dialog">
+            <label class="modal-overlay" for="modal-one"></label>
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <h2>Modal in CSS</h2>
+                    <label class="btn-close" for="modal-one" aria-hidden="true">x</label>
+                </div>
+                <div class="modal-body">
+                    <p>One modal example here!</p>
+                </div>
+                <div class="modal-footer">
+                    <label class="btn btn-primary" for="modal-one">Nice!</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <label class="btn" for="modal-two">Example 2</label>
+
+    <!-- modal two -->
+    <div class="modal">
+        <input class="modal-open" id="modal-two" type="checkbox" hidden>
+        <div class="modal-wrap" aria-hidden="true" role="dialog">
+            <label class="modal-overlay" for="modal-two"></label>
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <h2>Modal in CSS 2</h2>
+                    <label class="btn-close" for="modal-two" aria-hidden="true">x</label>
+                </div>
+                <div class="modal-body">
+                    <p>Another modal example here!</p>
+                </div>
+                <div class="modal-footer">
+                    <label class="btn btn-primary" for="modal-two">Nice!</label>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
