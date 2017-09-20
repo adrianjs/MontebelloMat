@@ -54,17 +54,21 @@ a, p, h3{
     background-attachment: fixed;
     height: 700px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-#monte {
+#logo {
     height: 125px;
     width: 700px;
     margin: auto;
     background-color: #ffffe3;
     border-radius: 50px;
+}
+
+#monte {
+    margin: auto;
 }
 
 #flex-nav {
@@ -79,8 +83,6 @@ a, p, h3{
     width: 80%;
     margin: auto;
 }
-
-
 
 #canvas {
     width: 200px;
