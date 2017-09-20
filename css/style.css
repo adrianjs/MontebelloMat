@@ -305,7 +305,7 @@ li {
 		align-items: center;
 		justify-content: center;
 
-
+        min-width: 600px;
 		max-width: 800px;
 		margin-left: auto;
 		margin-right: auto;
