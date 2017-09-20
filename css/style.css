@@ -40,9 +40,49 @@ a, p, h3{
 }
 @font-face{
     font-family: "Inline";
-    src: url('../font/ostrich-sans-master/OstrichSansInline.otf');
+    src: url('../font/ostrich-sans-master/OstrichSansInline-Regular.otf');
+}
+
+#flex-container {
+    margin: -10px;
+}
+
+#flex-header {
+    background-image: url("../img/food.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#monte {
+    height: 125px;
+    width: 700px;
+    margin: auto;
+    background-color: #ffffe3;
+    border-radius: 50px;
 }
 
 #flex-nav {
     text-align: center;
+    background-color: #ffffe3;
+    border-radius: 25px;
+}
+
+#flex-body {
+    background-color: #ffffe3;
+    border-radius: 25px;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+#canvas {
+    width: 200px;
+    height: 100px;
 }
