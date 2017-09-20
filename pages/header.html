@@ -1,58 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script type="text/javascript" src="../js/script.js"></script>
-        <link rel="icon" type="image/png" href=""/>
-        <link rel="stylesheet" href="../css/navbar.css" />
-        <title>Home</title>
-    </head>
+<html>
+<head>
+	<title>Header</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="navbar.js"></script>
+</head>
+<body>
 
-
-    <body>
-
-
-        <div id="flex-container">
-            <div id="flex-header">
-                <h1>Home</h1>
-                <div id="flex-nav">
-                    <ul>
-                        <li><a id="navOne" href="home.html">HOME</a></li>
-                        <li><a id="navTwo" href="starters.html">STARTERS</a></li>
-                        <li><a id="navThree" href="main_courses.html">MAIN COURSES</a></li>
-                        <li><a id="navFour" href="desserts.html">DESSERTS</a></li>
-                        <li><a id="navFive" href="drinks.html">DRINKS</a></li>
-                        <li><a id="navSix" href="documentation.html">DOCUMENTATION</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div id="flex-body">
-                    
-            </div>
-            <div id="flex-footer">
-                    
-            </div>
-        </div>
-
-
-
-        <section>
-          <h2>Scenario 1</h2>
-          <p>Equal width elements</p>
-<nav id="sc1">
-  <ul>
-    <li><a href="#" title="Home">Home</a></li>
-    <li><a href="#" title="Blog">Blog</a></li>
-    <li><a href="#" title="Work">Work</a></li>
-    <li><a href="#" title="Resources">Resources</a></li>
-    <li><a href="#" title="Meta">Meta</a></li>
-  </ul>
-</nav>
-
-
-    </body>
+<div id="flex-container">
+	<div id="flex-header">
+		<div id="logo">
+		        <img alt="Montebello-logo" src="logo.png" title="Montebello-logo">
+		</div>
+		<div id="hamburger">
+			<img id="navpic" src="menu.png">
+		</div>
+		<!--Navigasjonsmeny-->
+	    <div id="flex-nav">
+	    	<ul>
+	    		<li><a id="navOne" href="home.html">HOME</a></li>
+		        <li><a id="navTwo" href="starters.html">STARTERS</a></li>
+		        <li><a id="navThree" href="main_courses.html">MAIN COURSES</a></li>
+		        <li><a id="navFour" href="desserts.html">DESSERTS</a></li>
+		        <li><a id="navFive" href="drinks.html">DRINKS</a></li>
+		        <li><a id="navSix" href="documentation.html">DOCUMENTATION</a></li>
+		    </ul>
+	    </div>
+	</div> <!--Slutt på flex-header-->
+	<div id="flex-body">
+		<!-- deilig forsidebilde -->
+		<div id="home-pic"> 
+			<img alt="home_pic" src="home_pic.png" title="Food">
+		</div>
+		<!--Introduksjonstekst-->
+		<div id="presentation">	
+			<figure id="presentation-pic">
+				<img alt="presentation picture" src="presentpic.jpg" title="Presentation">
+			</figure>
+			<div id="presentation-body">
+				<h2 class="article-title">
+					God mat koster penger.
+				</h2>
+				<p id="presentation-text">
+					Det er ingen grunn til å tro noe annet! <br/>
+					Til helvete med middag til 100-lappen! 
+				</p>
+			</div>
+		</div> <!--Slutt på presentation-->
+		<!--Forrett-->
+		<a class="article meal" href="#">
+			<figure class="article-pic is4by3">
+				<img src="presentpic.jpg" alt="">
+			</figure>
+			<div class="article-body">
+				<h2 class="article-title">
+					Overskrift om forrett
+				</h2>
+				<p class="article-content">
+					Hater du også alle de billige oppskriftene som oppfordrer til billige og enkle råvarer? Vi også. Her finner du kun forslag til eksklusive og dyre retter. God mat koster penger. Til helvete med middag til 100-lappen! 
+				</p>
+				<footer class="article-info">
+					<span>SE ALLE FORRETTENE VÅRE</span>
+				</footer>
+			</div>
+		</a>
+		<!--Hovedrett-->
+		<a class="article meal" href="#">
+			<figure class="article-pic is4by3">
+				<img src="presentpic.jpg" alt="">
+			</figure>
+			<div class="article-body">
+				<h2 class="article-title">
+					Overskrift om hovedrett
+				</h2>
+				<p class="article-content">
+					Her kommer det masse tekst om hovedretten vår. Wow.
+				</p>
+				<footer class="article-info">
+					<span>SE ALLE HOVEDRETTENE VÅRE</span>
+				</footer>
+			</div>
+		</a>
+		<!--Dessert-->
+		<a class="article meal" href="#">
+			<figure class="article-pic is4by3">
+				<img src="presentpic.jpg" alt="">
+			</figure>
+			<div class="article-body">
+				<h2 class="article-title">
+					Overskrift om dessert
+				</h2>
+				<p class="article-content">
+					Her kommer det masse tekst om desserten vår. Wow.
+				</p>
+				<footer class="article-info">
+					<span>SE ALLE DESSERTENE VÅRE</span>
+				</footer>
+			</div>
+		</a>
+		<!--Drinker-->
+		<a class="article meal" href="#">
+			<figure class="article-pic is4by3">
+				<img src="presentpic.jpg" alt="">
+			</figure>
+			<div class="article-body">
+				<h2 class="article-title">
+					Overskrift om drinker
+				</h2>
+				<p class="article-content">
+					Her kommer det masse tekst om drinkene vår. Wow.
+				</p>
+				<footer class="article-info">
+					<span>SE ALLE DRINKENE VÅRE</span>
+				</footer>
+			</div>
+		</a>
+	</div>
+	<div id="flex-footer">
+		<h3><a href="mailto:baldur.kjelsvik@gmail.com?Subject=Hello,%20dudes" target="_top">Contact the Montebello team</a></h3>
+	</div>
+</div>
+</body>
 </html>
-
-
-
