@@ -237,6 +237,10 @@ li {
 
 @media screen and (max-width: 650px) {
 
+	h1 {
+		font-size: 50px;
+	}
+
 	#navpic {
 		display:flex;
 		margin: auto;
@@ -263,7 +267,6 @@ li {
 }
 
 @media screen and (min-width: 650px) {
-
 
 	#presentation {
 		display: flex;
