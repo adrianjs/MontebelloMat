@@ -1,3 +1,4 @@
+//Parallax effect (obviously)
 function parallax() {
     var scrolled = $(window).scrollTop();
     console.log("hello");
