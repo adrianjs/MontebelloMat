@@ -56,7 +56,7 @@ div, h2, p, figure {
 	justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: -10px;
+    margin: -8px;
 }
 
 #flex-nav {
