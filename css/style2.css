@@ -56,6 +56,7 @@ div, h2, p, figure {
 	justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    margin: -10px;
 }
 
 #flex-nav {
@@ -103,9 +104,6 @@ li {
 	padding-bottom: 1rem;
 }
 
-#flex-body {
-	flex-grow: 1;
-}
 
 #home-pic img {
 	height: auto;
@@ -230,7 +228,8 @@ li {
 	flex: 1;
     font-size: 0.7em;
     background-color: gray;
-    margin-top: 40px;
+    position: relative;
+    bottom: -100px;
 }
 
 #flex-footer a {
