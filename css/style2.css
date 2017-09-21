@@ -222,16 +222,6 @@ li {
 	color: orange;
 }
 
-<<<<<<< HEAD
-/**Problems occurred with footer and cards**/
-#flex-body {
-    display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-=======
->>>>>>> 68e9516c6e744ba0d0c855ff9ff38b443f6a3689
 #flex-footer{
 	display: flex;
 	justify-content: center;
