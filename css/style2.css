@@ -329,7 +329,11 @@ li {
 	padding: 0 5rem;
 }
 
-
+@media screen and (min-width: 52rem) {
+	.centered {
+		max-width: 70rem;
+	}
+}
 
 .card {
 	background: white;
@@ -418,7 +422,7 @@ li {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 101;
+	z-index: 140;
 }
 
 .modal-overlay {
@@ -428,10 +432,10 @@ li {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 102;
+	z-index: 141;
 }
 
-.modal-open:checked ~ .modal-wrap.before, .modal-open:checked ~ .modal-wrap .modal-overlay {
+.modal-open:checked ~ .modal-wrap:before, .modal-open:checked ~ .modal-wrap .modal-overlay {
 	display: block;
 }
 
@@ -452,7 +456,7 @@ li {
 	transition: transform .6s ease-in-out;
 	width: 80%;
 	max-width: 600px;
-	z-index: 103;
+	z-index: 143;
 }
 
 .modal-body {
