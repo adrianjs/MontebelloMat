@@ -125,7 +125,7 @@ li {
 	display: flex;
 	justify-content: space-around;
 	flex: 1;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	flex-basis: auto;
 	align-items: center;
 	flex-wrap: wrap;
@@ -225,11 +225,10 @@ li {
 #flex-footer{
 	display: flex;
 	justify-content: center;
-	flex: 1;
     font-size: 0.7em;
-    background-color: gray;
-    position: relative;
-    bottom: -100px;
+	border-top: 1px solid gray;
+	width: 1000px;
+	margin: auto;
 }
 
 #flex-footer a {
