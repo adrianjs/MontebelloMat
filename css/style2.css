@@ -97,12 +97,6 @@ li {
 	display: inline-block;
 }
 
-#logo img {
-	width: 400px;
-	display: flex;
-	margin: auto;
-	padding-bottom: 1rem;
-}
 
 .home-pic img {
 	height: auto;
@@ -258,11 +252,6 @@ li {
 	#flex-nav a:hover {
 		border: none;
 		padding: 1rem;
-	}
-	#logo img{
-		width: 200px;
-		padding-bottom: 0;
-		margin: auto;
 	}
 }
 
