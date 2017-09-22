@@ -41,7 +41,7 @@ function checkWidth(){
 $(document).ready(function(){
     /**AUTOMATIC SLIDESHOW**/
     var slideIndex = 0;
-    carousel();
+    //carousel();
     function carousel() {
         var i;
         var x = document.getElementsByClassName("mySlides");
