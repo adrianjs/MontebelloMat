@@ -24,7 +24,7 @@ let width = $(window).width();
 
 $(window).resize(function() {
     width = $(window).width();
-    console.log("sjekker");
+    //console.log("sjekker");
     checkWidth()
 });
 
