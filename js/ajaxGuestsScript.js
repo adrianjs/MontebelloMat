@@ -3,7 +3,7 @@ var items = [];
 
 $.getJSON( "js/quotes.json", function( data ) {
   $.each( data, function( key, val ) {
-    items.push(key, val);
+    items.push(val);
   });
 });
 
