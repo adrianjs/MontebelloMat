@@ -56,7 +56,7 @@ div, h2, p, figure {
 	justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: -10px;
+    margin: -8px;
 }
 
 #flex-nav {
@@ -103,7 +103,6 @@ li {
 	margin: auto;
 	padding-bottom: 1rem;
 }
-
 
 #home-pic img {
 	height: auto;
@@ -238,6 +237,10 @@ li {
 
 @media screen and (max-width: 650px) {
 
+	h1 {
+		font-size: 50px;
+	}
+
 	#navpic {
 		display:flex;
 		margin: auto;
@@ -264,9 +267,12 @@ li {
 }
 
 @media screen and (min-width: 650px) {
+<<<<<<< HEAD
 	#flex-nav {
 		display: flex;
 	}
+=======
+>>>>>>> 79954a51aed685ff63fb8cee88a15a84d4f4383a
 
 	#presentation {
 		display: flex;
@@ -331,7 +337,11 @@ li {
 	padding: 0 5rem;
 }
 
-
+@media screen and (min-width: 52rem) {
+	.centered {
+		max-width: 70rem;
+	}
+}
 
 .card {
 	background: white;
@@ -363,7 +373,7 @@ li {
 
 .thumbnail img {
 	width: 100%;
-	height: 330px;
+	height: auto;
 }
 
 /* responsive cards */
@@ -420,7 +430,7 @@ li {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 101;
+	z-index: 140;
 }
 
 .modal-overlay {
@@ -430,10 +440,10 @@ li {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 102;
+	z-index: 141;
 }
 
-.modal-open:checked ~ .modal-wrap.before, .modal-open:checked ~ .modal-wrap .modal-overlay {
+.modal-open:checked ~ .modal-wrap:before, .modal-open:checked ~ .modal-wrap .modal-overlay {
 	display: block;
 }
 
@@ -454,7 +464,7 @@ li {
 	transition: transform .6s ease-in-out;
 	width: 80%;
 	max-width: 600px;
-	z-index: 103;
+	z-index: 143;
 }
 
 .modal-body {
@@ -481,4 +491,16 @@ li {
 .modal-footer {
 	border-top: #eaeaea solid 1px;
 	text-align: right;
+}
+
+@media screen and (min-width: 650px){
+	.modal-dialog {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.modal-dialog {
+		width: 35%;
+	}
 }
