@@ -19,16 +19,13 @@ $(document).ready(function(){
     checkWidth();
 });
 
-
 let width = $(window).width(); 
-
 
 $(window).resize(function() {
     width = $(window).width();
     //console.log("sjekker");
     checkWidth()
 });
-
 
 function checkWidth(){
 	if (width >= 650) {

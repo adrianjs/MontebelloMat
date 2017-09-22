@@ -52,7 +52,7 @@ div, h2, p, figure {
 	width: 30px;
 	height: 30px;
 	padding: 5px;
-	display:none;
+	display:none; /*legg merke til at burgermenyen til vanlig ikke vises. Denne vises kun når @media-setningen inntreffer. Se under */
 }
 
 #flex-container {
