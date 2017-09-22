@@ -215,6 +215,12 @@ li {
 	display: flex;
 }
 
+#documentation-text {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
 #presentation-pic img {
 	width: 200px;
 	display: flex;
