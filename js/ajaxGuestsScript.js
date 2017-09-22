@@ -8,12 +8,12 @@ $.getJSON( "js/quotes.json", function( data ) {
 });
 
 $(document).ready(function(){
-    setInterval(ajaxHandler, 2000);
+    setInterval(ajaxHandler, 5000);
 });
 
 function ajaxHandler(){
     console.log(items);
-    var currentQuote  = items[quoteCounter];
-    $("#presentation-text").html(currentQuote); 
-    quoteCounter++;
+    $("#presentation-text").html(items[quoteCounter]); 
+    $("#costumer-pic").src(items[quoteCounter+1]);
+    quoteCounter = quoteCounter + 2;
 }

@@ -228,6 +228,15 @@ li {
 	margin: auto;
 }
 
+#flex-comment{
+	display: flex;
+	justify-content: center;
+    font-size: 0.7em;
+	border-top: 1px solid gray;
+	width: 75%;
+	margin: auto;
+}
+
 #flex-footer a {
 	color: white;
 	text-decoration: none;
