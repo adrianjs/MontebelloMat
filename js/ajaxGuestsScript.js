@@ -1,4 +1,4 @@
-var current_quote = 0;
+var quoteCounter = 0;
 var items = [];
 
 $.getJSON( "js/quotes.json", function( data ) {
@@ -13,9 +13,7 @@ $(document).ready(function(){
 
 function ajaxHandler(){
     console.log(items);
-    $.each(items.items, function(i , item){
-      $("#presentation-text").html(item); 
-    })
-    current_quote++;
-
+    var currentQuote  = items[quoteCounter];
+    $("#presentation-text").html(currentQuote); 
+    quoteCounter++;
 }
