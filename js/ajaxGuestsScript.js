@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 function ajaxHandler(){
     console.log(items);
-    $.each(data.items, function(i , item){
+    $.each(items.items, function(i , item){
       $("#presentation-text").html(item); 
     })
     current_quote++;
