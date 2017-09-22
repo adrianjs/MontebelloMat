@@ -8,7 +8,7 @@ $.getJSON( "js/quotes.json", function( data ) {
 });
 
 $(document).ready(function(){
-    setInterval(ajaxHandler(), 2000);
+    setInterval(ajaxHandler, 2000);
 });
 
 function ajaxHandler(){
