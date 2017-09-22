@@ -1,21 +1,21 @@
-var current_quote = 0;
+var quoteCounter = 0;
 var items = [];
 
 $.getJSON( "js/quotes.json", function( data ) {
   $.each( data, function( key, val ) {
-    items.push( "<li id='" + key + "'>" + val + "</li>" );
+    items.push(val);
   });
 });
 
 $(document).ready(function(){
-    setInterval(ajaxHandler(), 2000);
+    setInterval(ajaxHandler, 5000);
 });
 
 function ajaxHandler(){
-    console.log(items);
-    $.each(data.items, function(i , item){
-      $("#presentation-text").html(item.reddit); 
-    })
-    current_quote++;
-
+    if(quoteCounter > 6){
+      quoteCounter = 0;
+    }
+    $("#comment-text").html(items[quoteCounter]); 
+    $("#costumer-pic").attr("src",(items[quoteCounter+1]));
+    quoteCounter = quoteCounter + 2;
 }
