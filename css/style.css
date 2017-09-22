@@ -101,14 +101,124 @@ li {
 	display: inline-block;
 }
 
+.home-pic {
+	height: 600px;
+	width: 100%;
+	position: relative;
+}
 
 .home-pic img {
-	height: auto;
+	position: absolute;
 	width: 100%;
+	height: 100%;
+}
+
+.slide1,.slide2,.slide3,.slide4,.slide5,.slide6 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.slide1 {
+	background: url("../img/slides/american_cropped.jpg")no-repeat center;
+	background-size: cover;
+  	animation:fade 32s infinite;
+	-webkit-animation:fade 32s infinite;
+}
+.slide2 {
+	background: url("../img/slides/coffee_cropped.jpg")no-repeat center;
+	background-size: cover;
+	animation:fade2 32s infinite;
+  	-webkit-animation:fade2 32s infinite;
+}
+.slide3 {
+	background: url("../img/slides/cake_cropped.jpg")no-repeat center;
+	background-size: cover;
+	animation:fade3 32s infinite;
+  	-webkit-animation:fade3 32s infinite;
+}
+.slide4 {
+	background: url("../img/slides/bbq_cropped.jpg")no-repeat center;
+	background-size: cover;
+  	animation:fade4 32s infinite;
+	-webkit-animation:fade4 32s infinite;
+}
+.slide5 {
+	background: url("../img/slides/springroll_cropped.jpg")no-repeat center;
+	background-size: cover;
+	animation:fade5 32s infinite;
+  	-webkit-animation:fade5 32s infinite;
+}
+.slide6 {
+	background: url("../img/slides/sushi_cropped.jpg")no-repeat center;
+	background-size: cover;
+	animation:fade6 32s infinite;
+  	-webkit-animation:fade6 32s infinite;
+}
+
+@keyframes fade {
+	0%      {opacity: 1}
+	16.666% {opacity: 0}
+	33.333% {opacity: 0}
+	50%     {opacity: 0}
+	66.666% {opacity: 0}
+	83.333% {opacity: 0}
+	100%    {opacity: 1}
+}
+@keyframes fade2 {
+	0%      {opacity: 0}
+	16.666% {opacity: 1}
+	33.333% {opacity: 0}
+	50%     {opacity: 0}
+	66.666% {opacity: 0}
+	83.333% {opacity: 0}
+	100%    {opacity: 0}
+}
+@keyframes fade3 {
+	0%      {opacity: 0}
+	16.666% {opacity: 0}
+	33.333% {opacity: 1}
+	50%     {opacity: 0}
+	66.666% {opacity: 0}
+	83.333% {opacity: 0}
+	100%    {opacity: 0}
+}
+@keyframes fade4 {
+	0%      {opacity: 0}
+	16.666% {opacity: 0}
+	33.333% {opacity: 0}
+	50%     {opacity: 1}
+	66.666% {opacity: 0}
+	83.333% {opacity: 0}
+	100%    {opacity: 0}
+}
+@keyframes fade5 {
+	0%      {opacity: 0}
+	16.666% {opacity: 0}
+	33.333% {opacity: 0}
+	50%     {opacity: 0}
+	66.666% {opacity: 1}
+	83.333% {opacity: 0}
+	100%    {opacity: 0}
+}
+@keyframes fade6 {
+	0%      {opacity: 0}
+	16.666% {opacity: 0}
+	33.333% {opacity: 0}
+	50%     {opacity: 0}
+	66.666% {opacity: 0}
+	83.333% {opacity: 1}
+	100%    {opacity: 0}
 }
 
 #flex-home-text {
 	display: flex;
+}
+
+#documentation-text {
+	width: 80%;
+	margin: auto;
+	text-align: center;
 }
 
 #presentation-pic img {
@@ -243,6 +353,10 @@ li {
 }
 
 @media screen and (max-width: 650px) {
+
+	.home-pic {
+		height: 200px;
+	}
 
 	h1 {
 		font-size: 50px;
