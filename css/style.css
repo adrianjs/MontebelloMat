@@ -118,7 +118,7 @@ li {
     flex-direction: column;
 }
 
-#home-pic img {
+.home-pic img {
 	height: auto;
 	width: 100%;
 }
