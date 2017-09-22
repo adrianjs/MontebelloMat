@@ -16,6 +16,7 @@ $(document).ready(function(){
     $("#navpic").click(function(){
         $("#flex-nav").toggle();
     });
+    checkWidth();
 });
 
 
