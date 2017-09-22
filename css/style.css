@@ -345,6 +345,10 @@ li {
 
 @media screen and (max-width: 650px) {
 
+	.home-pic {
+		height: 200px;
+	}
+
 	h1 {
 		font-size: 50px;
 	}
