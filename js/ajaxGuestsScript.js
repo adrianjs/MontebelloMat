@@ -3,7 +3,7 @@ var items = [];
 
 $.getJSON( "js/quotes.json", function( data ) {
   $.each( data, function( key, val ) {
-    items.push( "<li id='" + key + "'>" + val + "</li>" );
+    items.push(key, val);
   });
 });
 
@@ -13,6 +13,7 @@ $(document).ready(function(){
 
 function ajaxHandler(){
     console.log(items);
+    console.log(items[quoteCounter]);
     $("#presentation-text").html(items[quoteCounter]); 
     $("#costumer-pic").attr("src",(items[quoteCounter+1]));
     quoteCounter = quoteCounter + 2;
