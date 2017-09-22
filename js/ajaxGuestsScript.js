@@ -13,7 +13,9 @@ $(document).ready(function(){
 
 function ajaxHandler(){
     console.log(items);
-    $("#presentation-text").html("Jquery 2"); 
+    $.each(data.items, function(i , item){
+      $("#presentation-text").html(item.reddit); 
+    })
     current_quote++;
 
 }
