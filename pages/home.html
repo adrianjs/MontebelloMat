@@ -3,87 +3,107 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/ajaxGuestsScript.js"></script>
         <script type="text/javascript" src="../js/script.js"></script>
-        <link rel="icon" type="image/png" href=""/>
-        <link rel="stylesheet" href="../css/style.css" />
-        <title>Home</title>
+        <link rel="icon" type="image/png" href="../img/logos/favicon.png"/>
+        <link rel="stylesheet" href="../css/style2.css" />
+        <title>Hjem</title>
     </head>
     <body>
         <div id="flex-container">
             <div id="flex-header">
-                <h1>Montebellomat</h1>
-                <div id="flex-nav">
-                    <a id="navOne" href="home.html">HOME</a>
-                    <a id="navTwo" href="starters.html">STARTERS</a>
-                    <a id="navThree" href="main_courses.html">MAIN COURSES</a>
-                    <a id="navFour" href="desserts.html">DESSERTS</a>
-                    <a id="navFive" href="drinks.html">DRINKS</a>
-                    <a id="navSix" href="documentation.html">DOCUMENTATION</a>
+                <div id="logo">
+                    <h1 id="monte">Montebellomat</h1>
                 </div>
+                <div id="hamburger">
+                    <img id="navpic" src="../img/logos/menu.png">
+                </div>
+                <div id="flex-nav">
+                    <ul>
+                        <il><a id="navOne" href="home.html">HJEM</a></il>
+                        <il><a id="navTwo" href="starters.html">FORRETTER</a></il>
+                        <il><a id="navThree" href="main_courses.html">HOVEDRETTER</a></il>
+                        <il><a id="navFour" href="desserts.html">DESSERTER</a></il>
+                        <il><a id="navFive" href="drinks.html">DRINKER</a></il>
+                        <il><a id="navSix" href="documentation.html">DOKUMENTASJON</a></il>
+                    </ul>
                 <div id="home_pic">
                     <img alt="home_pic" src="../img/food_cropped.jpg" title="Food" width="1500">           
                 </div>
             </div>
             <div id="flex-body">
-                <div id="flex-home-text">
-                    <div class="flex-home-pic">
-                        <img alt="home_text_pic" src="../img/food.jpeg" title="Picture" height="100">
-                    </div>
-                    <div class="flex-home-text">
-                        <p>We love food. Food is life.</p>
+                <div class="home-pic">
+                    <!--<img alt="home_pic" src="../img/slides/coffee_cropped.jpg" title="Food">-->
+                    <img class="mySlides" src="../img/slides/american_cropped.jpg">
+                    <img class="mySlides" src="../img/slides/bbq_cropped.jpg">
+                    <img class="mySlides" src="../img/slides/cake_cropped.jpg">
+                    <img class="mySlides" src="../img/slides/coffee_cropped.jpg">
+                    <img class="mySlides" src="../img/slides/springroll_cropped.jpg">
+                    <img class="mySlides" src="../img/slides/sushi_cropped.jpg">
+                </div>
+                <div id="presentation-container">
+                    <figure id="presentation-pic">
+                        <img alt="home_text_pic" src="../img/food.jpg" title="Picture">
+                    </figure>
+                    <div id="presentation-body">
+                        <h2 class="article-title">
+                                God mat koster penger.
+                        </h2>
+                        <p id="presentation-text">Vi elsker mat. Mat er livet.</p>
                     </div>
                 </div>
-                <div class="flex-home-food-container">
-                    <h2>Starter</h2>
-                    <div class="flex-home-food-pic">
-                        <img alt="starter_pic" src="../img/salad.jpg" title="Salad" height="100">
-                    </div>
-                    <div class="flex-home-food-text">
-                        <p>It's yummy...</p>
-                    </div>
-                    <div class="flex-home-food-link">
-                        <a id="starter_link" href="starters.html">See more</a>
-                    </div>
-                </div>
-                <div class="flex-home-food-container">
-                    <h2>Main course</h2>
-                    <div class="flex-home-food-pic">
-                        <img alt="main_course_pic" src="../img/american.jpeg" title="American" height="100">
-                    </div>
-                    <div class="flex-home-food-text">
-                        <p>Tasty...</p>
-                    </div>
-                    <div class="flex-home-food-link">
-                        <a id="main_course_link" href="main_courses.html">See more</a>
+                <div class="article meal" href="#">
+                    <figure class="article-pic is4by3">
+                        <img alt="starter_pic" src="../img/starters/salad.jpg" title="Salad" height="100">
+                    </figure>
+                    <div class="article-body">
+                        <h2 class="article-title">Våre forretter</h2>
+                        <p class="article-content">Det er godt...</p>
+                        <footer class="article-info">
+                            <a id="starter_link" href="starters.html">Se flere...</a>
+                        </footer>
                     </div>
                 </div>
-                <div class="flex-home-food-container">
-                    <h2>Dessert</h2>
-                    <div class="flex-home-food-pic">
-                        <img alt="dessert_pic" src="../img/cake.jpeg" title="Cake" height="100">
-                    </div>
-                    <div class="flex-home-food-text">
-                        <p>Sweet...</p>
-                    </div>
-                    <div class="flex-home-food-link">
-                        <a id="desserts_link" href="desserts.html">See more</a>
-                    </div>
-                </div>
-                <div class="flex-home-food-container">
-                    <h2>Drink</h2>
-                    <div class="flex-home-food-pic">
-                        <img alt="drink_pic" src="../img/strawberry.jpeg" title="Strawberry" height="100">
-                    </div>
-                    <div class="flex-home-food-text">
-                        <p>Strong...</p>
-                    </div>
-                    <div class="flex-home-food-link">
-                        <a id="drink_link" href="drinks.html">See more</a>
+                <div class="article meal" href="#">
+                    <figure class="article-pic is4by3">
+                        <img alt="main_course_pic" src="../img/main_courses/american.jpeg" title="American" height="100">
+                    </figure>
+                    <div class="article-body">
+                        <h2 class="article-title">Våre hovedretter</h2>
+                        <p class="article-content">Smakfullt...</p>
+                        <footer class="article-info">
+                            <a id="main_course_link" href="main_courses.html">Se flere...</a>
+                        </footer>
                     </div>
                 </div>
-            </div>
-            <div id="flex-footer">
-                <h3>Kåpirait</h3>
+                <div class="article meal" href="#">
+                    <figure class="article-pic is4by3">
+                        <img alt="dessert_pic" src="../img/desserts/cake.jpeg" title="Cake" height="100">
+                    </figure>
+                    <div class="article-body">
+                        <h2 class="article-title">Våre desserter</h2>
+                        <p class="article-content">Søtt...</p>
+                        <footer class="article-info">
+                            <a id="desserts_link" href="desserts.html">Se flere...</a>
+                        </footer>
+                    </div>
+                </div>
+                <div class="article meal" href="#">
+                    <figure class="article-pic is4by3">
+                        <img alt="drink_pic" src="../img/drinks/strawberry.jpeg" title="Strawberry" height="100">
+                    </figure>
+                    <div class="article-body">
+                        <h2 class="article-title">Våre drinker</h2>
+                        <p class="article-content">Sterkt...</p>
+                        <footer class="article-info">
+                            <a id="drink_link" href="drinks.html">Se flere...</a>
+                        </footer>
+                    </div>
+                </div>
+                <div id="flex-footer">
+                    <h3>Copyright 2017</h3>
+                </div>
             </div>
         </div>
     </body>
