@@ -1,7 +1,7 @@
 var current_quote = 0;
 var items = [];
 
-$.getJSON( "quotes.json", function( data ) {
+$.getJSON( "js/quotes.json", function( data ) {
   $.each( data, function( key, val ) {
     items.push( "<li id='" + key + "'>" + val + "</li>" );
   });
