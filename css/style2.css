@@ -267,12 +267,10 @@ li {
 }
 
 @media screen and (min-width: 650px) {
-<<<<<<< HEAD
+	
 	#flex-nav {
 		display: flex;
 	}
-=======
->>>>>>> 79954a51aed685ff63fb8cee88a15a84d4f4383a
 
 	#presentation {
 		display: flex;
