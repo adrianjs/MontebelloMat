@@ -14,7 +14,7 @@ $(document).ready(function(){
 function ajaxHandler(){
     console.log(items);
     console.log(items[quoteCounter]);
-    $("#presentation-text").html(items[quoteCounter]); 
+    $("#comment-text").html(items[quoteCounter]); 
     $("#costumer-pic").attr("src",(items[quoteCounter+1]));
     quoteCounter = quoteCounter + 2;
 }
