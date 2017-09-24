@@ -124,6 +124,7 @@ li {
 	height: 100%;
 }
 
+/*SLIDESHOW START*/
 .slide1,.slide2,.slide3,.slide4,.slide5,.slide6 {
 	position: absolute;
 	width: 100%;
@@ -221,6 +222,7 @@ li {
 	83.333% {opacity: 1}
 	100%    {opacity: 0}
 }
+/*SLIDESHOW END*/
 
 #flex-home-text {
 	display: flex;
