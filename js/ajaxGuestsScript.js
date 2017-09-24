@@ -3,7 +3,7 @@ var items = [];
 
 $(document).ready(function(){
     $.ajax({url: "../js/quotes.txt", success: function(result){
-      var lines = txt.responseText.split("\n");
+      var lines = result.responseText.split("\n");
       console.log(lines);
       setInterval(ajaxHandler, 5000);
     }});
