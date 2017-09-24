@@ -28,7 +28,7 @@ h2 {
 a, p, h3{
     color: #303030;
     font-family: "Inline", Verdana, Tahoma;
-    font-size: 15px;
+    font-size: 20px;
 }
 /**FONTS**/
 @font-face{
@@ -363,7 +363,7 @@ li {
 	height: 25px;
 	margin-right: 10px;
 	margin-left: 10px;
-	margin-top: 15px;
+	margin-top: 23px;
 }
 
 #flex-comment{
