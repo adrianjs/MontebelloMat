@@ -1,6 +1,0 @@
-  "Helt herlig!" - Hans Roger
-  img/costumers/happyManEating.jpg
-  "Jeg elsker hvor sunt det er" - Marit
-  img/costumers/happyFemaleEating.jpg
-  "Vi kommer hver dag" - Andersen m/fam
-  img/costumers/happyFamilyEating.jpg
