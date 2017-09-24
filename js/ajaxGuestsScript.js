@@ -1,8 +1,9 @@
 var quoteCounter = 0;
+var lines;
 
 $(document).ready(function(){
     $.ajax({url: "../js/quotes.txt", success: function(result){
-      var lines = result.split("\n");
+      lines = result.split("\n");
       setInterval(ajaxHandler, 5000);
     }});
 });
