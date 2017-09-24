@@ -663,3 +663,9 @@ li {
 #code1, #code2 {
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+#comment-text{
+	color: #303030;
+    font-family: "Inline", Verdana, Tahoma;
+    font-size: 32px;
+}
