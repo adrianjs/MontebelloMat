@@ -649,3 +649,17 @@ li {
 		width: 35%;
 	}
 }
+
+.doc-title {
+	font-size: 25px;
+	text-align: left;
+}
+
+.doc-text {
+	font-size: 20px;
+	text-align: left;
+}
+
+#code1, #code2 {
+	font-family: Arial, Helvetica, sans-serif;
+}
