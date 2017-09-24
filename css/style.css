@@ -232,14 +232,14 @@ li {
 	text-align: center;
 }
 
-#presentation-pic img {
+.presentation-pic img {
 	width: 200px;
 	display: flex;
 	border-radius:70%;
 
 }
 
-#presentation-container {
+.presentation-container {
 	display: flex;
 	justify-content: space-around;
 	flex: 1;
@@ -250,7 +250,7 @@ li {
 	margin: 20px;
 }
 
-#presentation-body {
+.presentation-body {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
