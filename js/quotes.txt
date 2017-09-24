@@ -1,0 +1,6 @@
+  "'Å kunne spise på Montebello er det som gjør livet verdt å leve for meg!' - Hans Roger"
+  "img/costumers/happyManEating.jpg"
+  "'Jeg bare elsker hvor dyrt det er' - Marit"
+  "img/costumers/happyFemaleEating.jpg"
+  "'Kjekk plass for familien å spise' - Familien Andersen"
+  "img/costumers/happyFamilyEating.jpg"
