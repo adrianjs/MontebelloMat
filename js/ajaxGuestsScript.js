@@ -4,7 +4,8 @@ var lines;
 $(document).ready(function(){
     $.ajax({url: "../js/quotes.txt", success: function(result){
       lines = result.split("\n");
-      setInterval(ajaxHandler, 5000);
+      ajaxHandler();
+      setInterval(ajaxHandler, 15000);
     }});
 });
 
