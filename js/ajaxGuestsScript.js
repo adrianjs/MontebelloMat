@@ -1,5 +1,5 @@
 var quoteCounter = 0;
-var lines;
+var lines = [];
 
 $(document).ready(function(){
   $.ajax({ 
