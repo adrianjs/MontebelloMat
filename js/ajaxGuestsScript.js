@@ -9,7 +9,7 @@ var items = [];
 $(document).ready(function(){
     $.ajax({url: "../js/quotes.txt", success: function(result){
       console.log(result);
-      var lines = result.responseText.split("\n");
+      var lines = result.split("\n");
       console.log(lines);
       setInterval(ajaxHandler, 5000);
     }});
