@@ -9,6 +9,10 @@ app.get('/', function (req, res){
 	res.sendFile('pages/home.html', {root: __dirname})
 });
 
+app.get('*', function(req, res){
+  res.sendFile('pages/404.html', {root: __dirname})
+});
+
 app.listen(8082, function () {
   console.log(__dirname)
   console.log('Montebello foods webserver listening on port 8082!')

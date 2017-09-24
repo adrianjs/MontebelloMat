@@ -33,12 +33,41 @@
                 <div id="documentation-text">
                     <h2>Dokumentasjon</h2>
                     <h3 class="doc-title">Bruk av node.js og express som webserver. Skriptet skal gjengis og beskrives på dokumentasjonssiden.</h3>
-                    <p class="doc-text">Her må noen skrive noe fornuftig.</p>
+                    <p class="doc-text" id="code1">
+                    Skriptet er kodet som følger: <br>
+                    const express = require('express'); //Legger ved express <br>
+                    const path = require('path'); //Legger ved path <br>
+                    const app = express(); //Setter app til å være path <br>
+                    <br>        
+                    app.use(express.static(path.join(__dirname+'/pages'))); <br>
+                    //Ved referenser til statisk innhold på siden så tas det utgangspunkt at brukeren befinner seg på "/pages".
+                    Dette sikrer uniform fil pathing mellom VM og lokale datamaskiner.<br> <br> 
+                    app.use('/', express.static(__dirname)); <br>
+                    //Passer på at filreferansene passer fra ved start fra "tom" request.
+                    <br>
+                    <br>
+                    app.get('/', function (req, res){ <br>
+                        res.sendFile('pages/home.html', {root: __dirname}) <br>
+                    }); <br>
+                    //Kodesnutten over setter webserveren opp til å sende pages/home.html ved "tom" request hvor brukeren kun taster inn '/' eller '' redirigerer den brukeren til 'pages/home.html'.
+                    <br>
+                    <br>
+                    app.get('*', function(req, res){ <br>
+                        res.sendFile('pages/404.html', {root: __dirname}) <br>
+                      }); <br>
+                    //Her passer vi på at en hver av requestene som vi får, som ikke er gyldige blir satt over til 404 siden til nettstedet.<br>
+                    <br>
+                    app.listen(8082, function () { <br>
+                        console.log('Montebello foods webserver listening on port 8082!') <br>
+                    }) <br>
+                    //app blir da satt til å lytte på port 8082, konsollen skriver ut en melding, som informerer brukeren om at den er aktiv og lytter på port 8082 
+                    
+                    </p>
                     <br>
                     <h3 class="doc-title">Bruk port 8082 slik at prosjektet kan finnes på http://it2810-XX.idi.ntnu.no:8082 hvor XX er gruppenavnet.</h3>
-                    <p class="doc-text">Express og nodejs har blitt satt opp og installert på VM i for å lage kjøremiljø for webserveren.
-                        Når server.js kjøres med nodejs i /local/prosjekt21/it2810-webutvikling-h17-prosjekt-2-gruppe-21 opprettes det en
-                        webserver som kan nås ved http://it2810-21.idi.ntnu.no:8082. Den baserer seg på express.</p>
+                    <p class="doc-text">Express og nodejs har blitt satt opp og installert på VM i for å lage kjøremiljø for webserveren. <br>
+                        Når server.js (ligger i root) kjøres med nodejs i /local/prosjekt21/it2810-webutvikling-h17-prosjekt-2-gruppe-21 (root) opprettes det en
+                        webserver som kan nås ved http://it2810-21.idi.ntnu.no:8082. Den baserer seg på express rammeverket til nodejs. <br> </p>
                     <br>
                     <h3 class="doc-title">Bruk CSS Flexible Box Layout Module: Overordnet layout av komponentene på siden skal baseres på bruk av CSS Flexible
                         Box Layout (også kalt flexbox layout). Hvordan dette er tatt i bruk skal beskrives på dokumentasjonssiden. </h3>
@@ -102,7 +131,9 @@
                     <br>
                     <h3 class="doc-title">På nettstedet skal det være bruk av ajax-funksjonaliteten. Hvordan dette benyttes kan dere bestemme selv. En mulighet er at sidene
                         lastes etter hvert som de velges i navigasjonsmenyen.</h3>
-                    <p class="doc-text">Fornuftighet må skrives. </p>
+                    <p class="doc-text"> Ajax benyttes i nettsiden på forsiden der gjesters kommentarer vises frem. <br>
+                        Her lastes det inn en .json fil med kommentarer som brukerene har lagt inn ved bruk av .ajax metoden til Jquery. <br>
+                        Disse kommentarene roteres. </p>
                     <br>
                     <h3 class="doc-title">Dere skal bruke jQuery, og det er kun lov å bruke basis-biblioteket (og ikke UI-biblioteket).<br>
                             - I løsningen skal dere ha med:<br>
@@ -121,7 +152,10 @@
                             });<br>
                             checkWidth(); //her kalles checkWidth() funksjonen for å sjekke hvorvidt burger-ikonet skal vises eller ei<br>
                         });<br>
-                            </p>
+                        <br>
+                        Videre brukes $.Ajax av Jquery for å hente inn kommetarer. Filen hvor den brukes er JS/ajaxGuestsScript.js
+                        </p>
+                
                     <br>
                     <h3 class="doc-title">Web-siden skal ha responsive web design og tilpasse seg skjermer/enheter av forskjellig størrelse</h3>
                     <p class="doc-text">Det er brukt Flex i utbredt grad, og nettsiden har @media-kode som inntreffer når skjermstørrelsen når en viss størrelse som

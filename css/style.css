@@ -669,3 +669,14 @@ li {
     font-family: "Inline", Verdana, Tahoma;
     font-size: 32px;
 }
+
+#text-404{
+	font-family: sans-serif;
+	color: #303030;
+	font-size: 128px;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	margin-top: 10%;
+	margin-bottom: 15%;
+}
