@@ -124,6 +124,11 @@ li {
 	height: 100%;
 }
 
+.documentationpic {
+	width: 80%;
+	height: auto;
+}
+
 /*SLIDESHOW START*/
 .slide1,.slide2,.slide3,.slide4,.slide5,.slide6 {
 	position: absolute;
