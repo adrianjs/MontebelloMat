@@ -1,78 +1,74 @@
 <!DOCTYPE html>
 <html lang="en" class="desserts-bg">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="../js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../js/script.js"></script>
-    <link rel="icon" type="image/png" href="../img/logos/favicon.png" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Desserter</title>
-</head>
-
-<body>
-    <div id="flex-container">
-        <div id="flex-header">
-            <div id="logo">
-                <h1 id="monte">Montebellomat</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../js/script.js"></script>
+        <link rel="icon" type="image/png" href="../img/logos/favicon.png" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <title>Desserter</title>
+    </head>
+    <body>
+        <div id="flex-container">
+            <div id="flex-header">
+                <div id="logo">
+                    <h1 id="monte">Montebellomat</h1>
+                </div>
+                <div id="hamburger">
+                    <img id="navpic" src="../img/logos/menu.png">
+                </div>
+                <div id="flex-nav">
+                    <ul>
+                        <li><a id="navOne" href="home.html">HJEM</a></li>
+                        <li><a id="navTwo" href="starters.html">FORRETTER</a></li>
+                        <li><a id="navThree" href="main_courses.html">HOVEDRETTER</a></li>
+                        <li><a id="navFour" href="desserts.html">DESSERTER</a></li>
+                        <li><a id="navFive" href="drinks.html">DRINKER</a></li>
+                        <li><a id="navSix" href="documentation.html">DOKUMENTASJON</a></li>
+                    </ul>
+                </div>
             </div>
-            <div id="hamburger">
-                <img id="navpic" src="../img/logos/menu.png">
-            </div>
-            <div id="flex-nav">
-                <ul>
-                    <li><a id="navOne" href="home.html">HJEM</a></li>
-                    <li><a id="navTwo" href="starters.html">FORRETTER</a></li>
-                    <li><a id="navThree" href="main_courses.html">HOVEDRETTER</a></li>
-                    <li><a id="navFour" href="desserts.html">DESSERTER</a></li>
-                    <li><a id="navFive" href="drinks.html">DRINKER</a></li>
-                    <li><a id="navSix" href="documentation.html">DOKUMENTASJON</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="flex-body">
-            <div class="home-pic"></div>
-            <div id="background-centered">
-                <div class="centered">
-
-                    <!--Card 1-->
-                    <section class="cards">
-                        <article class="card">
-                            <label for="modal-one">
-                                <figure class="thumbnail">
-                                    <img src="../img/desserts/banana.jpg" alt="banana-split">
-                                </figure>
-                                <div class="card-content">
-                                    <h2>Banansplit</h2>
-                                    <p>Issa very gooood for you</p>
-                                </div>
-                            </label>
-                        </article>
-
-                        <!-- modal for card 1 -->
-                        <div class="modal">
-                            <input class="modal-open" id="modal-one" type="checkbox" hidden>
-                            <div class="modal-wrap" aria-hidden="true" role="dialog">
-                                <label class="modal-overlay" for="modal-one"></label>
-                                <div class="modal-dialog">
-                                    <div class="modal-header">
+            <div id="flex-body">
+                <div class="home-pic"></div>
+                <div id="background-centered">
+                    <div class="centered">
+                        <!--Card 1-->
+                        <section class="cards">
+                            <article class="card">
+                                <label for="modal-one">
+                                    <figure class="thumbnail">
+                                        <img src="../img/desserts/banana.jpg" alt="banana-split">
+                                    </figure>
+                                    <div class="card-content">
                                         <h2>Banansplit</h2>
-                                        <label class="btn-close" for="modal-one" aria-hidden="true">x</label>
+                                        <p>Issa very gooood for you</p>
                                     </div>
-                                    <div class="modal-body">
-                                        <p>HERE IS WHERE THE RECIPE GOES. Alternately fill this shiet with lorum ipsum</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <label class="btn btn-primary" for="modal-one">Close</label>
+                                </label>
+                            </article>
+                            <!-- modal for card 1 -->
+                            <div class="modal">
+                                <input class="modal-open" id="modal-one" type="checkbox" hidden>
+                                <div class="modal-wrap" aria-hidden="true" role="dialog">
+                                    <label class="modal-overlay" for="modal-one"></label>
+                                    <div class="modal-dialog">
+                                        <div class="modal-header">
+                                            <h2>Banansplit</h2>
+                                            <label class="btn-close" for="modal-one" aria-hidden="true">x</label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Oppskrift</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <label class="btn btn-primary" for="modal-one">Close</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!--Card 2-->
-                        <article class="card">
-                            <label for="modal-two">
+                            <!--Card 2-->
+                            <article class="card">
+                                <label for="modal-two">
                                     <figure class="thumbnail">
                                         <img src="../img/desserts/cake.jpeg" alt="chocolate-cake">
                                     </figure>
@@ -81,31 +77,30 @@
                                         <p>Schmaker godt</p>
                                     </div>
                                 </label>
-                        </article>
-
-                        <!-- modal for card 2 -->
-                        <div class="modal">
-                            <input class="modal-open" id="modal-two" type="checkbox" hidden>
-                            <div class="modal-wrap" aria-hidden="true" role="dialog">
-                                <label class="modal-overlay" for="modal-two"></label>
-                                <div class="modal-dialog">
-                                    <div class="modal-header">
-                                        <h2>Sjokoladekake</h2>
-                                        <label class="btn-close" for="modal-two" aria-hidden="true">x</label>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>HERE IS WHERE THE RECIPE GOES. Alternately fill this shiet with lorum ipsum</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <label class="btn btn-primary" for="modal-two">Close</label>
+                            </article>
+                            <!-- modal for card 2 -->
+                            <div class="modal">
+                                <input class="modal-open" id="modal-two" type="checkbox" hidden>
+                                <div class="modal-wrap" aria-hidden="true" role="dialog">
+                                    <label class="modal-overlay" for="modal-two"></label>
+                                    <div class="modal-dialog">
+                                        <div class="modal-header">
+                                            <h2>Sjokoladekake</h2>
+                                            <label class="btn-close" for="modal-two" aria-hidden="true">x</label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Oppskrift</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <label class="btn btn-primary" for="modal-two">Close</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!--Card 3-->
-                        <article class="card">
-                            <label for="modal-three">
+                            <!--Card 3-->
+                            <article class="card">
+                                <label for="modal-three">
                                     <figure class="thumbnail">
                                         <img src="../img/desserts/cookies.jpeg" alt="cookies">
                                     </figure>
@@ -114,31 +109,30 @@
                                         <p>Issa very gooood for you</p>
                                     </div>
                                 </label>
-                        </article>
-
-                        <!-- modal for card 3 -->
-                        <div class="modal">
-                            <input class="modal-open" id="modal-three" type="checkbox" hidden>
-                            <div class="modal-wrap" aria-hidden="true" role="dialog">
-                                <label class="modal-overlay" for="modal-three"></label>
-                                <div class="modal-dialog">
-                                    <div class="modal-header">
-                                        <h2>Cookies</h2>
-                                        <label class="btn-close" for="modal-three" aria-hidden="true">x</label>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>HERE IS WHERE THE RECIPE GOES. Alternately fill this shiet with lorum ipsum</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <label class="btn btn-primary" for="modal-three">Close</label>
+                            </article>
+                            <!-- modal for card 3 -->
+                            <div class="modal">
+                                <input class="modal-open" id="modal-three" type="checkbox" hidden>
+                                <div class="modal-wrap" aria-hidden="true" role="dialog">
+                                    <label class="modal-overlay" for="modal-three"></label>
+                                    <div class="modal-dialog">
+                                        <div class="modal-header">
+                                            <h2>Cookies</h2>
+                                            <label class="btn-close" for="modal-three" aria-hidden="true">x</label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Oppskrift</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <label class="btn btn-primary" for="modal-three">Close</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!--Card 4-->
-                        <article class="card">
-                            <label for="modal-four">
+                            <!--Card 4-->
+                            <article class="card">
+                                <label for="modal-four">
                                     <figure class="thumbnail">
                                         <img src="../img/desserts/crunchy.jpg" alt="crunchy">
                                     </figure>
@@ -147,31 +141,30 @@
                                         <p>Issa very gooood for you</p>
                                     </div>
                                 </label>
-                        </article>
-
-                        <!-- modal for card 4 -->
-                        <div class="modal">
-                            <input class="modal-open" id="modal-four" type="checkbox" hidden>
-                            <div class="modal-wrap" aria-hidden="true" role="dialog">
-                                <label class="modal-overlay" for="modal-four"></label>
-                                <div class="modal-dialog">
-                                    <div class="modal-header">
-                                        <h2>Tilslørte bondepiker</h2>
-                                        <label class="btn-close" for="modal-four" aria-hidden="true">x</label>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>HERE IS WHERE THE RECIPE GOES. Alternately fill this shiet with lorum ipsum</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <label class="btn btn-primary" for="modal-four">Close</label>
+                            </article>
+                            <!-- modal for card 4 -->
+                            <div class="modal">
+                                <input class="modal-open" id="modal-four" type="checkbox" hidden>
+                                <div class="modal-wrap" aria-hidden="true" role="dialog">
+                                    <label class="modal-overlay" for="modal-four"></label>
+                                    <div class="modal-dialog">
+                                        <div class="modal-header">
+                                            <h2>Tilslørte bondepiker</h2>
+                                            <label class="btn-close" for="modal-four" aria-hidden="true">x</label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Oppskrift</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <label class="btn btn-primary" for="modal-four">Close</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!--Card 5-->
-                        <article class="card">
-                            <label for="modal-five">
+                            <!--Card 5-->
+                            <article class="card">
+                                <label for="modal-five">
                                     <figure class="thumbnail">
                                         <img src="../img/desserts/cupcakes.jpeg" alt="cupcakes">
                                     </figure>
@@ -180,71 +173,69 @@
                                         <p>Issa fively very gooood for you</p>
                                     </div>
                                 </label>
-                        </article>
-
-                        <!-- modal for card 5 -->
-                        <div class="modal">
-                            <input class="modal-open" id="modal-five" type="checkbox" hidden>
-                            <div class="modal-wrap" aria-hidden="true" role="dialog">
-                                <label class="modal-overlay" for="modal-five"></label>
-                                <div class="modal-dialog">
-                                    <div class="modal-header">
-                                        <h2>Muffins</h2>
-                                        <label class="btn-close" for="modal-five" aria-hidden="true">x</label>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>HERE IS WHERE THE RECIPE GOES. Alternately fill this shiet with lorum ipsum</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <label class="btn btn-primary" for="modal-five">Close</label>
+                            </article>
+                            <!-- modal for card 5 -->
+                            <div class="modal">
+                                <input class="modal-open" id="modal-five" type="checkbox" hidden>
+                                <div class="modal-wrap" aria-hidden="true" role="dialog">
+                                    <label class="modal-overlay" for="modal-five"></label>
+                                    <div class="modal-dialog">
+                                        <div class="modal-header">
+                                            <h2>Muffins</h2>
+                                            <label class="btn-close" for="modal-five" aria-hidden="true">x</label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Oppskrift</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <label class="btn btn-primary" for="modal-five">Close</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!--Card 6-->
-                        <article class="card">
-                            <label for="modal-six">
-                                <figure class="thumbnail">
-                                    <img src="../img/desserts/pancakes.jpeg" alt="pancakes">
-                                </figure>
-                                <div class="card-content">
-                                    <h2>Amerikanske pannekaker</h2>
-                                    <p>Issa six-ly very gooood for you</p>
-                                </div>
-                            </label>
-                        </article>
-
-                        <!-- modal for card 6 -->
-                        <div class="modal">
-                            <input class="modal-open" id="modal-six" type="checkbox" hidden>
-                            <div class="modal-wrap" aria-hidden="true" role="dialog">
-                                <label class="modal-overlay" for="modal-six"></label>
-                                <div class="modal-dialog">
-                                    <div class="modal-header">
+                            <!--Card 6-->
+                            <article class="card">
+                                <label for="modal-six">
+                                    <figure class="thumbnail">
+                                        <img src="../img/desserts/pancakes.jpeg" alt="pancakes">
+                                    </figure>
+                                    <div class="card-content">
                                         <h2>Amerikanske pannekaker</h2>
-                                        <label class="btn-close" for="modal-six" aria-hidden="true">x</label>
+                                        <p>Issa six-ly very gooood for you</p>
                                     </div>
-                                    <div class="modal-body">
-                                        <p>HERE IS WHERE THE RECIPE GOES. Alternately fill this shiet with lorum ipsum</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <label class="btn btn-primary" for="modal-six">Close</label>
+                                </label>
+                            </article>
+                            <!-- modal for card 6 -->
+                            <div class="modal">
+                                <input class="modal-open" id="modal-six" type="checkbox" hidden>
+                                <div class="modal-wrap" aria-hidden="true" role="dialog">
+                                    <label class="modal-overlay" for="modal-six"></label>
+                                    <div class="modal-dialog">
+                                        <div class="modal-header">
+                                            <h2>Amerikanske pannekaker</h2>
+                                            <label class="btn-close" for="modal-six" aria-hidden="true">x</label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Oppskrift</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <label class="btn btn-primary" for="modal-six">Close</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                </div>
-                <div id="flex-footer">
-                    <img class="logopic" src="../img/logos/facebook-logo.png" alt="logo pic">
-                    <img class="logopic" src="../img/logos/twitter-logo.png" alt="logo pic">
-                    <img class="logopic" src="../img/logos/instagram-logo.png" alt="logo pic">
-                    <h3>Copyright 2017</h3>
+                        </section>
+                    </div>
+                    <div id="flex-footer">
+                        <img class="logopic" src="../img/logos/facebook-logo.png" alt="logo pic">
+                        <img class="logopic" src="../img/logos/twitter-logo.png" alt="logo pic">
+                        <img class="logopic" src="../img/logos/instagram-logo.png" alt="logo pic">
+                        <h3>Copyright 2017</h3>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>
