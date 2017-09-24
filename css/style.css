@@ -1,6 +1,16 @@
-body{
-	background-color: #ffffe3;
+html{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
+.home-bg { background-color: #ffffe3; }
+.starters-bg { background-image: url(../img/starters/sushi.jpg); }
+.main-courses-bg { background-image: url(../img/main_courses/bbq.jpeg); }
+.desserts-bg { background-image: url(../img/desserts/cake.jpeg); }
+.drinks-bg { background-image: url(../img/drinks/coffee.jpeg); }
+.documentation-bg { background-color: #ffffe3; }
 
 /**TEXT**/
 h1 {
@@ -68,6 +78,7 @@ div, h2, p, figure {
 }
 
 #flex-header {	
+	background-color: #ffffe3;
     display: flex;
 	flex-direction: column;
     justify-content: space-around;
@@ -113,6 +124,12 @@ li {
 	height: 100%;
 }
 
+.documentationpic {
+	width: 80%;
+	height: auto;
+}
+
+/*SLIDESHOW START*/
 .slide1,.slide2,.slide3,.slide4,.slide5,.slide6 {
 	position: absolute;
 	width: 100%;
@@ -120,7 +137,7 @@ li {
 }
 
 .slide1 {
-	background: url("../img/slides/american_cropped.jpg")no-repeat center;
+	background: url("../img/slides/american_xcropped.jpeg")no-repeat center;
 	background-size: cover;
   	animation:fade 32s infinite;
 	-webkit-animation:fade 32s infinite;
@@ -132,25 +149,25 @@ li {
   	-webkit-animation:fade2 32s infinite;
 }
 .slide3 {
-	background: url("../img/slides/cake_cropped.jpg")no-repeat center;
+	background: url("../img/slides/cake_xcropped.jpeg")no-repeat center;
 	background-size: cover;
 	animation:fade3 32s infinite;
   	-webkit-animation:fade3 32s infinite;
 }
 .slide4 {
-	background: url("../img/slides/bbq_cropped.jpg")no-repeat center;
+	background: url("../img/slides/bbq_xcropped.jpeg")no-repeat center;
 	background-size: cover;
   	animation:fade4 32s infinite;
 	-webkit-animation:fade4 32s infinite;
 }
 .slide5 {
-	background: url("../img/slides/springroll_cropped.jpg")no-repeat center;
+	background: url("../img/slides/springrolled_xcropped.jpg")no-repeat center;
 	background-size: cover;
 	animation:fade5 32s infinite;
   	-webkit-animation:fade5 32s infinite;
 }
 .slide6 {
-	background: url("../img/slides/sushi_cropped.jpg")no-repeat center;
+	background: url("../img/slides/sushi_xcropped.jpg")no-repeat center;
 	background-size: cover;
 	animation:fade6 32s infinite;
   	-webkit-animation:fade6 32s infinite;
@@ -210,6 +227,7 @@ li {
 	83.333% {opacity: 1}
 	100%    {opacity: 0}
 }
+/*SLIDESHOW END*/
 
 #flex-home-text {
 	display: flex;
@@ -221,14 +239,14 @@ li {
 	text-align: center;
 }
 
-#presentation-pic img {
+.presentation-pic img {
 	width: 200px;
 	display: flex;
 	border-radius:70%;
 
 }
 
-#presentation-container {
+.presentation-container {
 	display: flex;
 	justify-content: space-around;
 	flex: 1;
@@ -239,7 +257,7 @@ li {
 	margin: 20px;
 }
 
-#presentation-body {
+.presentation-body {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -330,12 +348,22 @@ li {
 }
 
 #flex-footer{
+	background-color: #ffffe3;
 	display: flex;
 	justify-content: center;
     font-size: 0.7em;
 	border-top: 1px solid gray;
 	width: 75%;
 	margin: auto;
+	padding-bottom: 20px;
+	justify-content: center;
+}
+
+.logopic {
+	height: 25px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 15px;
 }
 
 #flex-comment{
@@ -444,6 +472,10 @@ li {
 }
 
 /* CSS for cards and modals */
+
+#background-centered {
+	background-color: #ffffe3;
+}
 
 .centered {
 	margin: 0 auto;
@@ -616,4 +648,18 @@ li {
 	.modal-dialog {
 		width: 35%;
 	}
+}
+
+.doc-title {
+	font-size: 25px;
+	text-align: left;
+}
+
+.doc-text {
+	font-size: 20px;
+	text-align: left;
+}
+
+#code1, #code2 {
+	font-family: Arial, Helvetica, sans-serif;
 }

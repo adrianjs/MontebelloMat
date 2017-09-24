@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="documentation-bg">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,7 +16,7 @@
                     <h1 id="monte">Montebellomat</h1>
                 </div>
                 <div id="hamburger">
-                    <img id="navpic" src="../img/logos/menu.png">
+                    <img id="navpic" src="../img/logos/menu.png" alt="navigation pic">
                 </div>
                 <div id="flex-nav">
                     <ul>
@@ -32,10 +32,107 @@
             <div id="flex-body">
                 <div id="documentation-text">
                     <h2>Dokumentasjon</h2>
-                    <p>paragraf</p>
+                    <h3 class="doc-title">Bruk av node.js og express som webserver. Skriptet skal gjengis og beskrives på dokumentasjonssiden.</h3>
+                    <p class="doc-text">Her må noen skrive noe fornuftig.</p>
+                    <br>
+                    <h3 class="doc-title">Bruk port 8082 slik at prosjektet kan finnes på http://it2810-XX.idi.ntnu.no:8082 hvor XX er gruppenavnet.</h3>
+                    <p class="doc-text">Express og nodejs har blitt satt opp og installert på VM i for å lage kjøremiljø for webserveren.
+                        Når server.js kjøres med nodejs i /local/prosjekt21/it2810-webutvikling-h17-prosjekt-2-gruppe-21 opprettes det en
+                        webserver som kan nås ved http://it2810-21.idi.ntnu.no:8082. Den baserer seg på express.</p>
+                    <br>
+                    <h3 class="doc-title">Bruk CSS Flexible Box Layout Module: Overordnet layout av komponentene på siden skal baseres på bruk av CSS Flexible
+                        Box Layout (også kalt flexbox layout). Hvordan dette er tatt i bruk skal beskrives på dokumentasjonssiden. </h3>
+                    <p class="doc-text">Her har vi brukt en flex-container for hele nettsiden og inni den har vi brukt en flex body med elementer som alle baserer
+                        seg på display:flex. Se bilder for illustrasjon. Vi har her bare valgt ut bilder for å demonstrere bruken av flex:</p><br>
+                    <img class="documentationpic" src="../img/dokumentasjon/1-.png" alt="documentation pic"><br>
+                    <img class="documentationpic" src="../img/dokumentasjon/2-.png" alt="documentation pic"><br>
+                    <img class="documentationpic" src="../img/dokumentasjon/3-.png" alt="documentation pic"><br>
+                    <img class="documentationpic" src="../img/dokumentasjon/4-.png" alt="documentation pic"><br>
+                    <p class="doc-text">De to følgende bildene er flex-elementer inne i article.meal </p><br>
+                    <img class="documentationpic" src="../img/dokumentasjon/5-.png" alt="documentation pic"><br>
+                    <img class="documentationpic" src="../img/dokumentasjon/6-.png" alt="documentation pic"><br>
+                    <p class="doc-text">Fordelen med flex er naturligvis regelhåndtering når man krymper skjermstørrelsen. Følgende bilder er tatt når man navigerer på mobil:</p><br>
+                    <img class="documentationpic" src="../img/dokumentasjon/7-.png" alt="documentation pic"><br>
+                    <p class="doc-text">Legg merke til at da flyttes div.article-body under bildet fordi da er det mer naturlig at innhold leses ovenfra og ned og
+                        ikke fra venstre mot høyre som er mer naturlig på stor skjerm.</p>
+                    <br>
+                    <h3 class="doc-title">Navigasjonsbaren skal implementeres ”fra bunnen av” (eksempelvis ikke baseres på eksisterende ui-elementer fra andre bibliotek).</h3>
+                    <p class="doc-text">Navigasjonsbaren er bygget på ren HTML, CSS og Jquery. Ingen bootstrap eller noe annet bibliotek. Vi har brukt en blanding av CSS
+                        @media-query og Jquery-spørresetninger for å få den til å kollapse og vise burgermenyen når man justerer skjermstørrelsen: 
+                        Dette er hva som står i js-fila:</p><br>
+                    <p class="doc-text" id="code1">//Show and hide navbar<br>
+                        $(document).ready(function(){<br>
+                            $("#navpic").click(function(){<br>
+                                $("#flex-nav").toggle();<br>
+                            });<br>
+                            checkWidth();<br>
+                        });<br><br>
+                        
+                        let width = $(window).width(); <br><br>
+                        
+                        $(window).resize(function() {<br>
+                            width = $(window).width();<br>
+                            //console.log("sjekker");<br>
+                            checkWidth()<br>
+                        });<br><br>
+                        
+                        function checkWidth(){<br>
+                            if (width >= 650) {<br>
+                                $("#flex-nav").css('display','flex');<br>
+                            }<br>
+                            else {<br>
+                                $("#flex-nav").css('display','none');<br>
+                            }<br>
+                        }<br>
+                        Dette er hva som står i css-fila: <br>
+                        #navpic {<br>
+                            width: 30px;<br>
+                            height: 30px;<br>
+                            padding: 5px;<br>
+                            Display:none; /*legg merke til at burgermenyen til vanlig ikke vises. Denne vises kun når @media-setningen inntreffer. Se under */<br>
+                        }<br><br>
+                        
+                        @media screen and (max-width: 650px) {<br>
+                            #navpic {<br>
+                                display:flex;<br>
+                                margin: auto;<br>
+                            }<br>
+                        }
+                    </p>
+                    <br>
+                    <h3 class="doc-title">På nettstedet skal det være bruk av ajax-funksjonaliteten. Hvordan dette benyttes kan dere bestemme selv. En mulighet er at sidene
+                        lastes etter hvert som de velges i navigasjonsmenyen.</h3>
+                    <p class="doc-text">Fornuftighet må skrives. </p>
+                    <br>
+                    <h3 class="doc-title">Dere skal bruke jQuery, og det er kun lov å bruke basis-biblioteket (og ikke UI-biblioteket).<br>
+                            - I løsningen skal dere ha med:<br>
+                            - jQuery selector-funksjonaliteten<br>
+                            - en eller flere funksjoner fra jQuery APIet<br>
+                            - funksjon som parameter<br>
+                            - form for event-håndtering (f.eks. assosiere funksjoner med elementene i navigasjonsbaren).<br>
+                            - Hvordan dere har løst disse punktene skal beskrives på dokumentasjonssiden<br>
+                    </h3>
+                    <p class="doc-text" id="code2">Navigasjonsbaren (se over) er et eksempel på hvordan vi har tatt i bruk jQuery. For eksempel sjekker jQuery bredden på nettsiden hver gang skjermvinduet endres:<br>
+                        $(window).resize(function() {...kode…}<br>
+                        Vi bruker også jQuery til å gjøre burger(meny)-ikonet klikkbart til å toggle funksjonen på å vise/skjule navbar: <br>
+                        $(document).ready(function(){<br>
+                            $("#navpic").click(function(){<br>
+                                $("#flex-nav").toggle();<br>
+                            });<br>
+                            checkWidth(); //her kalles checkWidth() funksjonen for å sjekke hvorvidt burger-ikonet skal vises eller ei<br>
+                        });<br>
+                            </p>
+                    <br>
+                    <h3 class="doc-title">Web-siden skal ha responsive web design og tilpasse seg skjermer/enheter av forskjellig størrelse</h3>
+                    <p class="doc-text">Det er brukt Flex i utbredt grad, og nettsiden har @media-kode som inntreffer når skjermstørrelsen når en viss størrelse som
+                        gjør at nettsidens elementer organiseres annerledes. jQuery brukes også for å tilpasse mobilstørrelser bedre.</p>
+                    <br>
                 </div>
                 <div id="flex-footer">
-                    <h3>Copyright 2017</h3>
+                    <img class="logopic" src="../img/logos/facebook-logo.png" alt="logo pic">
+                    <img class="logopic" src="../img/logos/twitter-logo.png" alt="logo pic">
+                    <img class="logopic" src="../img/logos/instagram-logo.png" alt="logo pic">
+                    <h3 class="doc-title">Copyright 2017</h3>
                 </div>
             </div>
         </div>
